@@ -41,6 +41,7 @@ apt-get update
 apt-get -y install docker.io
 
 # Install Hadoop
+# TODO: Cloudera Distribution for Hadoop instead of Apache Hadoop
 # $1 is HADOOP_VERSION
 set -e
 
@@ -78,7 +79,7 @@ sudo -u hduser sh -c "ssh-keyscan -H localhost >> /home/hduser/.ssh/known_hosts"
 #sudo -u hduser sh -c "ssh-keyscan -H $2 >> /home/hduser/.ssh/known_hosts"
 
 # Download Hadoop
-HADOOP_VER="$1"
+HADOOP_VER="2.7.0"
 cd ~
 if [ ! -f /tmp/hadoop-${HADOOP_VER}.tar.gz ]; then
 	wget http://apache.osuosl.org/hadoop/common/hadoop-${HADOOP_VER}/hadoop-${HADOOP_VER}.tar.gz -O /tmp/hadoop-${HADOOP_VER}.tar.gz
