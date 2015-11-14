@@ -23,4 +23,9 @@
       <value>hdfs://namenode:9000</value>
       <description>It is a NameNode hostname</description>
     </property>
+    <property>
+     <name>io.file.buffer.size</name>
+     <value>4096</value>
+     <description>read and write buffer size of files</description>
+    </property>
 </configuration>
