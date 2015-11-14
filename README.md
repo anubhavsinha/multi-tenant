@@ -1,2 +1,2 @@
 # multi-tenant
-mesos+myriad+multi-tenant-yarn on aws
+mesos+myriad+multi-tenant-yarn
