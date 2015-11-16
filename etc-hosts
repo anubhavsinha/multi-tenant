@@ -1,0 +1,8 @@
+# append these to your /etc/hosts file
+master some_ip
+slave1 some_ip
+slave2 some_ip
+slave3 some_ip
+
+# master runs hdfs master and mesos master
+# slaves run hdfs slave and mesos slave

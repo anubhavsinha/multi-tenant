@@ -17,10 +17,10 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-    fs.defaultFS: NameNode URI, hdfs://namenode:9000
+    fs.defaultFS: NameNode URI, hdfs://master:9000
     <property>
       <name>fs.defaultFS</name>
-      <value>hdfs://namenode:9000</value>
+      <value>hdfs://master:9000</value>
       <description>It is a NameNode hostname</description>
     </property>
     <property>
